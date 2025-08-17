@@ -136,6 +136,59 @@ footer {
   background: orange;
   color: white;
 }
+.contact-page {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.contact-page h2 {
+  color: orange;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-page form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-page form button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-page form button:hover {
+  background: black;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: black;
+}
+
 
 /* Toast Styles */
 #toast {
@@ -206,4 +259,5 @@ footer {
         padding: 0 10px;
     }
 }
+
 
