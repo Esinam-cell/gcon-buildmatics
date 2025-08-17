@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GCON Buildmatics Limited</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -62,10 +64,39 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 GCON BUILDMATICS LIMITED. All Rights Reserved.</p>
 
-    <footer>
-        <p>&copy; 2025 GCON Buildmatics Limited. All Rights Reserved.</p>
-    </footer>
+    <!-- Share Buttons -->
+    <div class="share-buttons">
+      <p>Share our website:</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&text=Check%20out%20GCON%20Buildmatics%20Limited!" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourwebsite.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/?text=Check%20out%20GCON%20Buildmatics%20Limited!%20https://yourwebsite.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+      <!-- Copy Link Button -->
+      <button onclick="copyLink()" class="copy-btn"><i class="fas fa-link"></i> Copy Link</button>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Message -->
+<div id="toast">Link copied!</div>
+
+<!-- Script for Copy Button -->
+<script>
+  function copyLink() {
+    const siteUrl = "https://yourwebsite.com"; // Replace with your actual site link
+    navigator.clipboard.writeText(siteUrl).then(() => {
+      let toast = document.getElementById("toast");
+      toast.className = "show";
+      setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 2500);
+    });
+  }
+</script>
 </body>
 </html>
+
 
