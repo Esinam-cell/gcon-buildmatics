@@ -115,6 +115,52 @@ footer {
     text-align: center;
     padding: 10px;
 }
+.copy-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.copy-btn i {
+  margin-right: 5px;
+  color: orange;
+}
+
+.copy-btn:hover {
+  background: orange;
+  color: white;
+}
+
+/* Toast Styles */
+#toast {
+  visibility: hidden;
+  min-width: 200px;
+  margin-left: -100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
 
 /* -------------------- Responsive Design -------------------- */
 @media (max-width: 992px) {
@@ -160,3 +206,4 @@ footer {
         padding: 0 10px;
     }
 }
+
